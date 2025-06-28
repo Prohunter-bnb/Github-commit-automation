@@ -1,39 +1,60 @@
-🚀 Project Auto Creator Dashboard
+# 🚀 Project Auto Creator Dashboard
 
-This PHP-based automation tool is designed to manage your GitHub repositories automatically through a web-based dashboard. Originally, it was used to create new private repositories on a schedule, but it has now been adapted to edit the README file of an existing repository instead.
+A powerful PHP-based automation tool to manage your GitHub repositories *from a simple web dashboard*.
 
-Key Features:
+---
 
-Connects directly to your GitHub account using a secure personal access token
+## ✨ Features
 
-Shows connection status in a friendly interface
+✅ Connects to your GitHub account with a personal access token  
+✅ Checks your connection status live on the dashboard  
+✅ Logs all actions in `run.log`  
+✅ One-click button to **edit and commit changes to the README** in your chosen repository  
+✅ Fully private and secure  
+✅ Modern, responsive, and clean interface
 
-Logs all operations to a run.log file
+---
 
-Allows you to trigger the README update with a single button
+## ⚙️ How It Works
 
-Commits the provided README content automatically, without creating new projects each time
+- Connects using the GitHub REST API
+- Uses a personal access token you generate on GitHub
+- Instead of creating new repositories each time, it **updates** the existing repository's README
+- Commits changes automatically
+- Logs everything so you can track the history
+- Runs manually or on an automated cron job/server timer
+- Keeps your workflow clean without cluttering your GitHub with too many repos
 
-Provides a clean, modern dashboard to monitor activities
+---
 
-How it works now (updated):
+## 📁 Tech Stack
 
-Instead of creating a new repository every time, the tool edits the existing repository’s README
+- PHP
+- GitHub REST API
+- HTML + CSS for the dashboard
+- Simple log file tracking (`run.log`)
 
-Commits the updated README using the GitHub API
+---
 
-Logs the commit status in run.log
+## 📌 Why Use This?
 
-Keeps all changes centralized in a single repository
+✅ Automate documentation changes  
+✅ Test GitHub workflows  
+✅ Easily trigger README updates  
+✅ Keep a single private repo tidy  
+✅ Never have to manually push changes again
 
-This approach avoids clutter from repeatedly making new repos, while still letting you manage fresh README content as needed.
+---
 
-Perfect for:
+## 🛠️ Setup
 
-auto-updating documentation
+1. Place the PHP files on your web server  
+2. Generate a **GitHub Personal Access Token** with `repo` scope  
+3. Update the `utils.php` with your token  
+4. Visit `index.php` to use the dashboard  
+5. Tap the button to commit your updated README content!
 
-testing CI/CD workflows
+---
 
-or keeping a single private repo with automated content changes
-
-(Built with ❤️ by Utkarsh, powered by PHP + GitHub REST API)
+> **Built with ❤️ by Utkarsh Singh**  
+> Automate smarter, manage easier. 🚀
