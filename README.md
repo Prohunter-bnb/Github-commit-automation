@@ -50,7 +50,7 @@ A powerful PHP-based automation tool to manage your GitHub repositories *from a 
 
 1. Place the PHP files on your web server  
 2. Generate a **GitHub Personal Access Token** with `repo` scope  
-3. Update the `utils.php` with your token  
+3. Update the `config.php` with your token  
 4. Visit `index.php` to use the dashboard  
 5. Tap the button to commit your updated README content!
 
