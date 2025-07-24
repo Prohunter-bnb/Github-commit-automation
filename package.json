@@ -1,7 +1,4 @@
 {
   "name": "github-commit-automation",
-  "version": "1.0.0",
-  "devDependencies": {
-    "@vercel/php": "^1.1.1"
-  }
+  "version": "1.0.0"
 } 
